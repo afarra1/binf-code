@@ -1,5 +1,5 @@
 import React from 'react'
-import './Pages/stylesheets/navbar.css'
+import './stylesheets/navbar.css'
 import { Link } from 'react-router-dom'
 import Logo from './logo.svg';
 
