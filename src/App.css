@@ -1,0 +1,22 @@
+:root {
+  --primary-color: #3498db; /* Example of creating a color code */
+  --secondary-color: #2ecc71; 
+  --Red: #fe5e54; 
+  --Bisque: #ffe1c5; 
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
