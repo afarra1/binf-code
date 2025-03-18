@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Container, TextField, Button, Box, Typography } from "@mui/material";
+import Logo from '../assets/imgs/logo.png'
 
 const LoginPage = () => {
   const navigate = useNavigate();
@@ -12,7 +13,7 @@ const LoginPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    navigate("/home");
+    navigate("/");
   };
 
   return (
@@ -20,12 +21,14 @@ const LoginPage = () => {
       sx={{
         height: "100vh",
         display: "flex",
+        flexDirection:'column',
         alignItems: "center",
         justifyContent: "center",
         backgroundColor: "#4C5C5F",
       }}
     >
-      <Container maxWidth="xs" sx={{ bgcolor: "white", p: 4, borderRadius: 2, boxShadow: 3 }}>
+      <img style={{paddingBottom:'1.25%'}} src={Logo} alt="logo img"/>
+      <div>
         <Typography variant="h5" align="center" gutterBottom>
           Login
         </Typography>
@@ -53,7 +56,7 @@ const LoginPage = () => {
             Login
           </Button>
         </form>
-      </Container>
+      </div>
     </Box>
   );
 };
